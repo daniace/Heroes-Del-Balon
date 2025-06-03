@@ -51,14 +51,14 @@ class MiembrosView(VentanaView):
         ):
             # Imagenes
             bruno = self.__fotos_integrantes["bruno"]
-            angelo = self.__fotos_integrantes["marco"]
+            angelo = self.__fotos_integrantes["angelo"]
             dani = self.__fotos_integrantes["daniace"]
-            leo = self.__fotos_integrantes["marco"]
-            valentin = self.__fotos_integrantes["marco"]
-            axel = self.__fotos_integrantes["marco"]
-            pelu = self.__fotos_integrantes["marco"]
+            leo = self.__fotos_integrantes["leo"]
+            valentin = self.__fotos_integrantes["valentin"]
+            axel = self.__fotos_integrantes["axel"]
             dani2 = self.__fotos_integrantes["daniel"]
-            walter = self.__fotos_integrantes["marco"]
+            walter = self.__fotos_integrantes["walter"]
+            pelu = self.__fotos_integrantes["pelu"]
             # Primera Fila Imagenes
             self._pantalla.blit(bruno, (int(ANCHO * 0.23), int(ALTO * 0.18)))
             self._pantalla.blit(angelo, (int(ANCHO * 0.43), int(ALTO * 0.18)))
@@ -72,15 +72,15 @@ class MiembrosView(VentanaView):
             self._pantalla.blit(dani2, (int(ANCHO * 0.43), int(ALTO * 0.78)))
             self._pantalla.blit(walter, (int(ANCHO * 0.63), int(ALTO * 0.78)))
             # Textos
-            texto_bruno = get_fuente(35).render("Bruno Aguinaga", True, BLANCO)
-            texto_angelo = get_fuente(35).render("  Angelo Duarte", True, BLANCO)
-            texto_dani = get_fuente(35).render(" Daniel Acevedo", True, BLANCO)
-            texto_leo = get_fuente(35).render("  Leonel Canario", True, BLANCO)
-            texto_valentin = get_fuente(35).render("Valentin Gonzalez", True, BLANCO)
-            texto_axel = get_fuente(35).render("  Axel De la Torre", True, BLANCO)
-            texto_pelu = get_fuente(35).render("  Franco Berro", True, BLANCO)
-            texto_dani2 = get_fuente(35).render(" Daniel Enegron", True, BLANCO)
-            texto_walter = get_fuente(35).render("   Walter Williams", True, BLANCO)
+            texto_bruno = get_fuente(35).render("Bruno Aguinaga", True, CIAN)
+            texto_angelo = get_fuente(35).render("  Angelo Duarte", True, CIAN)
+            texto_dani = get_fuente(35).render(" Daniel Acevedo", True, CIAN)
+            texto_leo = get_fuente(35).render("  Leonel Canario", True, CIAN)
+            texto_valentin = get_fuente(35).render("Valentin Gonzalez", True, CIAN)
+            texto_axel = get_fuente(35).render("  Axel De la Torre", True, CIAN)
+            texto_pelu = get_fuente(35).render("  Franco Berro", True, CIAN)
+            texto_dani2 = get_fuente(35).render(" Daniel Enegron", True, CIAN)
+            texto_walter = get_fuente(35).render("   Walter Williams", True, CIAN)
             # Primera Fila
             self._pantalla.blit(texto_bruno, (int(ANCHO * 0.223), int(ALTO * 0.13)))
             self._pantalla.blit(texto_angelo, (int(ANCHO * 0.423), int(ALTO * 0.13)))
@@ -108,10 +108,29 @@ class MiembrosView(VentanaView):
         daniel = pygame.transform.scale(daniel, (150, 150))
         daniace = pygame.image.load("src/assets/images/daniace.png")
         daniace = pygame.transform.scale(daniace, (150, 150))
+        angelo = pygame.image.load("src/assets/images/angelo.png")
+        angelo = pygame.transform.scale(angelo, (150, 150))
+        pelu = pygame.image.load("src/assets/images/pelu.png")
+        pelu = pygame.transform.scale(pelu, (150, 150))
+        leo = pygame.image.load("src/assets/images/leo.png")
+        leo = pygame.transform.scale(leo, (150, 150))
+        axel = pygame.image.load("src/assets/images/axel.png") 
+        axel = pygame.transform.scale(axel, (150, 150))
+        valentin = pygame.image.load("src/assets/images/valentin.png")
+        valentin = pygame.transform.scale(valentin, (150, 150))
+        walter = pygame.image.load("src/assets/images/walter.png")
+        walter = pygame.transform.scale(walter, (150, 150))
         self.__fotos_integrantes = {
             "bruno": bruno,
             "marco": marco,
             "daniel": daniel,
             "marco2": marco2,
             "daniace": daniace,
+            "angelo": angelo,
+            "pelu": pelu,
+            "leo": leo,
+            "axel": axel,
+            "valentin": valentin,
+            "walter": walter,
+
         }

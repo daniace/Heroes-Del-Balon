@@ -49,6 +49,7 @@ SCREEN = pygame.display.set_mode(TAMANIO_PANTALLA)
 clock = pygame.time.Clock()
 
 # Colores en RGB
+CIAN = (0, 255, 255)
 NEGRO = (0, 0, 0)
 BLANCO = (255, 255, 255)
 ROJO = (255, 0, 0)

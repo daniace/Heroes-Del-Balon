@@ -1,4 +1,4 @@
-# HEORES DEL BALON
+# HEROES DEL BALON
 ---
 
 Este es un proyecto académico desarrollado como parte de la asignatura de Programación Orientada a Objetos.
@@ -13,7 +13,7 @@ El proyecto fue desarrollado por los siguientes integrantes:
 - Aguinaga Bruno 
 - Berro Franco
 - Canario Leonel
-- DeLaTorre Axel
+- De La Torre Axel
 - Duarte Angelo
 - Enegron Daniel
 - Gonzalez Ian
